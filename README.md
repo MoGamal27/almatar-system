@@ -28,3 +28,48 @@
 
   ]
   ```
+
+  - **Auth endpoints**
+
+  ```
+  POST /api/auth
+  ```
+
+  Create new user.
+
+  Response:
+
+  ```json
+  [
+    {
+   
+  "name": "Mo Gamal",
+  "email": "engmogamil@gmail.com",
+  "password": "123456"
+
+  }
+
+  ]
+  ```
+
+  - **Booking endpoints**
+
+  ```
+  POST /api/bookings-flight
+  ```
+
+  Create new booking flight.
+
+  Response:
+
+  ```json
+  [
+    {
+   "flightId": "66ab205dfed76aeb0354700a",
+  "userId": "66ab294ee1d510efe2f7ef0f",
+  "seatNumber": 4,
+  "bookingDate": "2024-08-01T06:28:21.615Z"
+  }
+
+  ]
+  ```

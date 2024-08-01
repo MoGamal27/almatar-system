@@ -1,6 +1,9 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import flightRouter from './routes/flightRoutes';
+import authRouter from './routes/authRoutes';
+import bookingRouter from './routes/bookingRoutes';
+
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -21,5 +24,8 @@ mongoose.connect(url).then(() => {
 
 
 app.use('/api/flights', flightRouter);
+app.use('/api/auth', authRouter);
+app.use('/api/bookings', bookingRouter);
+
 
 app.listen(5000, () => console.log('Server is running on port 5000'));
