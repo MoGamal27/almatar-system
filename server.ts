@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import flightRouter from './routes/flightRoutes';
 import authRouter from './routes/authRoutes';
 import bookingRouter from './routes/bookingRoutes';
+import searchRoutes from './routes/searchRoutes';
 
 import dotenv from 'dotenv';
 
@@ -26,6 +27,6 @@ mongoose.connect(url).then(() => {
 app.use('/api/flights', flightRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/bookings', bookingRouter);
-
+app.use('/api/search', searchRoutes);
 
 app.listen(5000, () => console.log('Server is running on port 5000'));
