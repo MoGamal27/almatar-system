@@ -214,3 +214,119 @@
   ]
   ```
 
+ - **Travel endpoints**
+
+  ```
+  POST /api/travel/round-trip-flight
+  ```
+
+  Create round trip flight
+
+  Request:
+
+  ```json
+  [
+    {
+   "from":"Egypt",
+  "to":"Qatar",
+  "date":"2024-07-10T08:00:00Z"
+  }
+
+  ]
+  ```
+
+  Response:
+
+  ```json
+  [
+    {
+   "_id": "66ab205dfed76aeb0354700a",
+    "flightNumber": "1",
+    "airline": "Qatar Airways",
+    "departureAirport": "Egypt",
+    "arrivalAirport": "Qatar",
+    "departureTime": "2024-07-10T08:00:00.000Z",
+    "arrivalTime": "2024-07-10T14:00:00.000Z",
+    "price": 500,
+    "availableSeats": 150,
+  }
+
+  ]
+  ```
+
+   ```
+  POST /api/travel/one-way-flight
+  ```
+
+  Create one way flight
+
+  Request:
+
+  ```json
+  [
+    {
+   "from":"Egypt",
+  "to":"Qatar",
+  "departdate":"2024-07-10T08:00:00Z",
+  "returnDate":"2024-08-10T08:00:00Z"
+  }
+
+  ]
+  ```
+
+  Response:
+
+  ```json
+  [
+    {
+   "departFlights": 
+   "departureAirport": "Egypt",
+    "arrivalAirport": "Qatar",
+    "departureTime": "2024-07-10T08:00:00.000Z",
+
+    "returnFlights":  
+    "arrivalAirport": "Qatar",
+    "departureAirport": "Egypt",
+    "departureTime": "2024-08-10T08:00:00.000Z",
+  }
+
+  ]
+  ```
+
+   ```
+  POST /api/travel/multi-city-flight
+  ```
+
+  Create multi city flight
+
+  Request:
+
+  ```json
+  [
+    {
+   "from":"Egypt",
+  "to":"Qatar",
+  "date":"2024-07-10T08:00:00Z"
+  }
+
+  ]
+  ```
+
+  Response:
+
+  ```json
+  [
+    {
+   "_id": "66ab205dfed76aeb0354700a",
+    "flightNumber": "1",
+    "airline": "Qatar Airways",
+    "departureAirport": "Egypt",
+    "arrivalAirport": "Qatar",
+    "departureTime": "2024-07-10T08:00:00.000Z",
+    "arrivalTime": "2024-07-10T14:00:00.000Z",
+    "price": 500,
+    "availableSeats": 150,
+  }
+
+  ]
+  ```
