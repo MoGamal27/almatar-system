@@ -4,6 +4,7 @@ interface bookingAttrs extends Document {
     flightId: String,
     userId: String,
     seatNumber: Number,
+    paymentIntentId: String,
     bookingDate: Date
 }
 
@@ -20,9 +21,12 @@ const BookingSchema: Schema = new Schema({
         type: Number,
         required: true
     },
-    bookingDate:{
-        type: Date,
+    paymentIntentId: {
+        type: String,
         required: true
+    },
+    bookingDate:{
+        type: Date
     }
 })
 

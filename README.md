@@ -58,9 +58,9 @@
   POST /api/bookings-flight
   ```
 
-  Create new booking flight.
+  Create new booking payment flight.
 
-  Response:
+  Request:
 
   ```json
   [
@@ -68,11 +68,49 @@
    "flightId": "66ab205dfed76aeb0354700a",
   "userId": "66ab294ee1d510efe2f7ef0f",
   "seatNumber": 4,
+  "paymentMethodId": "pm_card_visa",
   "bookingDate": "2024-08-01T06:28:21.615Z"
   }
 
   ]
   ```
+
+  Response:
+
+  ```json
+  [
+    {
+  "success": true,
+  "bookingId": "BOOKING_ID",
+  "paymentIntentId": "PAYMENT_INTENT_ID",
+  "status": "succeeded"
+  }
+
+  ]
+  ```
+
+  ```
+  GET /api/bookings-flight
+  ```
+
+  Retrieve Payment details.
+
+  Request:
+
+  ```json
+  [
+    {
+   "bookingId": "BOOKING_ID",
+  "flightNumber": "FLIGHT_NUMBER",
+  "amount": AMOUNT_IN_DOLLARS,
+  "status": "succeeded",
+  "bookingDate": "TIMESTAMP"
+  }
+
+  ]
+  ```
+
+
 
   - **Search endpoints**
 
