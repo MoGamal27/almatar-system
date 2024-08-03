@@ -1,5 +1,58 @@
-# almatar-system
- The Flight and Search Service manages flight information and provides flight search functionality in the Flight Booking System.
+# Almatar System
+The Almatar System is a comprehensive flight and hotel booking platform that offers a seamless booking experience for users. The system includes features for flight and hotel booking, user authentication, payment processing, search and filtering, user profile management, notifications, and an admin panel.
+
+## Features
+
+### 1. Flight Booking
+
+- Search for flights (one-way, round-trip, multi-city)
+- View flight prices and availability
+- Book flights
+- Manage flight bookings (view, cancel, modify)
+- Flight price alerts
+
+### 2. Hotel Booking
+
+- Search for hotels by location, dates, and amenities
+- View hotel details, room types, and prices
+- Book hotel rooms
+- Manage hotel bookings (view, cancel, modify)
+- Hotel reviews and ratings
+
+### 3. User Authentication
+
+- User registration and login
+- JWT (JSON Web Token) authentication
+- OAuth integration with Google for easy sign-in
+
+### 4. Payment Processing
+
+- Secure payment processing using Stripe
+- Support for multiple currencies
+- Refund processing
+
+### 5. Search and Filters
+
+- Advanced search options for flights and hotels
+- Filter results by price, airline, hotel star rating, amenities, etc.
+- Sort results by various criteria (price, duration, rating)
+
+### 6. User Profile
+
+- View and edit user information
+- Save favorite flights and hotels
+- View booking history
+
+### 7. Notifications
+
+- Email notifications for booking confirmations, reminders, and updates
+- Push notifications for mobile app users
+
+### 8. Admin Panel
+
+- Manage flights, hotels, and bookings
+- View analytics and reports
+- User management
 
 ## API Endpoints
 
